@@ -1,0 +1,19 @@
+opam-version: "2.0"
+name: "peterson_project"
+version: "0.1"
+synopsis: "Peterson's algorithm for mutual exclusion"
+description: """
+An OCaml implementation and model checking of Peterson's algorithm.
+"""
+maintainer: "your-email@example.com"
+authors: ["Reena Seeba"]
+license: "MIT"
+homepage: "https://example.com/peterson_project"
+bug-reports: "https://example.com/peterson_project/issues"
+depends: [
+  "dune" {>= "2.9"}
+  "alcotest"
+]
+build: [
+  ["dune" "build" "-p" name "-j" jobs]
+]

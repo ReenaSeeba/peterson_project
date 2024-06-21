@@ -1,0 +1,32 @@
+# dune runtest
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/reena/.cache/dune/db
+# Workspace root: /home/reena/peterson_project
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/reena/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune_fbefc6_output
+$ (cd _build/default && /home/reena/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I peterson_project/lib/.peterson.objs/byte -no-alias-deps -opaque -o peterson_project/lib/.peterson.objs/byte/peterson.cmo -c -impl peterson_project/lib/peterson.ml)
+$ (cd _build/default && /home/reena/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I peterson_project/test/.test_peterson.eobjs/byte -I /home/reena/.opam/4.14.1/lib/alcotest -I /home/reena/.opam/4.14.1/lib/alcotest/engine -I /home/reena/.opam/4.14.1/lib/alcotest/stdlib_ext -I /home/reena/.opam/4.14.1/lib/astring -I /home/reena/.opam/4.14.1/lib/cmdliner -I /home/reena/.opam/4.14.1/lib/fmt -I /home/reena/.opam/4.14.1/lib/re -I /home/reena/.opam/4.14.1/lib/seq -I /home/reena/.opam/4.14.1/lib/stdlib-shims -I /home/reena/.opam/4.14.1/lib/uutf -I peterson_project/lib/.peterson.objs/byte -no-alias-deps -opaque -o peterson_project/test/.test_peterson.eobjs/byte/dune__exe__Test_peterson.cmo -c -impl peterson_project/test/test_peterson.ml)
+$ (cd _build/default && /home/reena/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I peterson_project/lib/.peterson.objs/byte -I peterson_project/lib/.peterson.objs/native -intf-suffix .ml -no-alias-deps -opaque -o peterson_project/lib/.peterson.objs/native/peterson.cmx -c -impl peterson_project/lib/peterson.ml)
+$ (cd _build/default && /home/reena/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o peterson_project/lib/peterson.cmxa peterson_project/lib/.peterson.objs/native/peterson.cmx)
+$ (cd _build/default && /home/reena/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I peterson_project/test/.test_peterson.eobjs/byte -I peterson_project/test/.test_peterson.eobjs/native -I /home/reena/.opam/4.14.1/lib/alcotest -I /home/reena/.opam/4.14.1/lib/alcotest/engine -I /home/reena/.opam/4.14.1/lib/alcotest/stdlib_ext -I /home/reena/.opam/4.14.1/lib/astring -I /home/reena/.opam/4.14.1/lib/cmdliner -I /home/reena/.opam/4.14.1/lib/fmt -I /home/reena/.opam/4.14.1/lib/re -I /home/reena/.opam/4.14.1/lib/seq -I /home/reena/.opam/4.14.1/lib/stdlib-shims -I /home/reena/.opam/4.14.1/lib/uutf -I peterson_project/lib/.peterson.objs/byte -I peterson_project/lib/.peterson.objs/native -intf-suffix .ml -no-alias-deps -opaque -o peterson_project/test/.test_peterson.eobjs/native/dune__exe__Test_peterson.cmx -c -impl peterson_project/test/test_peterson.ml)
+$ (cd _build/default && /home/reena/.opam/4.14.1/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o peterson_project/test/test_peterson.exe /home/reena/.opam/4.14.1/lib/astring/astring.cmxa /home/reena/.opam/4.14.1/lib/cmdliner/cmdliner.cmxa /home/reena/.opam/4.14.1/lib/uutf/uutf.cmxa /home/reena/.opam/4.14.1/lib/alcotest/stdlib_ext/alcotest_stdlib_ext.cmxa /home/reena/.opam/4.14.1/lib/fmt/fmt.cmxa /home/reena/.opam/4.14.1/lib/fmt/fmt_cli.cmxa /home/reena/.opam/4.14.1/lib/re/re.cmxa /home/reena/.opam/4.14.1/lib/stdlib-shims/stdlib_shims.cmxa /home/reena/.opam/4.14.1/lib/alcotest/engine/alcotest_engine.cmxa /home/reena/.opam/4.14.1/lib/ocaml/unix.cmxa -I /home/reena/.opam/4.14.1/lib/ocaml /home/reena/.opam/4.14.1/lib/fmt/fmt_tty.cmxa /home/reena/.opam/4.14.1/lib/alcotest/alcotest.cmxa -I /home/reena/.opam/4.14.1/lib/alcotest peterson_project/lib/peterson.cmxa peterson_project/test/.test_peterson.eobjs/native/dune__exe__Test_peterson.cmx)
+$ (cd _build/default/peterson_project/test && ./test_peterson.exe)
+> Testing `Peterson's Algorithm Tests'.
+> This run has ID `KLQLB53H'.
+>
+>   [OK]          initial state          0   initial state.
+>   [OK]          step                   0   step.
+>   [OK]          model check            0   model check.
+>
+> Full test results in `~/peterson_project/_build/default/peterson_project/test/_build/_tests/PetersonU+0027s Algorithm Tests'.
+> Test Successful in 0.000s. 3 tests run.

@@ -1,0 +1,4 @@
+(executable
+ (public_name peterson_project)
+ (name main)
+ (libraries peterson))
