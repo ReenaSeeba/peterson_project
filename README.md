@@ -18,21 +18,6 @@ Petersoni algoritm on paralleelprogrammeermise algoritm, mis tagab, et kaks või
 - `is_error`: Kontrollib, kas mõlemad lõimed on samaaegselt kriitilises sektsioonis.
 - `model_check`: Rekursiivselt kontrollib süsteemi seisundite üleminekuid algoritmi verifitseerimiseks.
 
-## Projekti struktuur
-
-peterson_project/
-├── bin/
-│ ├── dune
-│ └── main.ml
-├── lib/
-│ ├── dune
-│ └── peterson.ml
-├── test/
-│ ├── dune
-│ └── test_peterson.ml
-├── dune-project
-└── peterson_project.opam
-
 ## Failid
 
 - `bin/main.ml`: Peamine käivituspunkt mudelkontrolli käivitamiseks.
