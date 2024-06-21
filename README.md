@@ -1,6 +1,6 @@
 # Petersoni algoritm OCamlis
 
-See projekt rakendab ja verifitseerib Petersoni algoritmi OCamlis. Implementatsioon sisaldab mudelkontrollijat, et tagada algoritmi korrektne toimimine, vältimaks mõlema lõime samaaegset kriitilisse sektsiooni sisenemist.
+Petersoni algoritmi rakendamine ja selle töö kontrollimine OCamlis. Implementatsioon sisaldab mudelkontrollijat, et tagada algoritmi korrektne toimimine, vältimaks mõlema lõime samaaegset kriitilisse sektsiooni sisenemist.
 
 ## Petersoni algoritm
 
