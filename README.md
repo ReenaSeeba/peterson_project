@@ -35,9 +35,9 @@ Petersoni algoritm on paralleelprogrammeermise algoritm, mis tagab, et kaks või
 
 1. Initsialiseeri OPAM ja kasuta OCaml 4.14.0 versioonile:
    
-   `opam init`
-   `opam switch create 4.14.0`
-   `eval $(opam env)`
+   - `opam init`
+   - `opam switch create 4.14.0`
+   - `eval $(opam env)`
 
 2. Paigalda sõltuvused:
 
@@ -54,8 +54,3 @@ Petersoni algoritm on paralleelprogrammeermise algoritm, mis tagab, et kaks või
 5. Testide täitmine:
 
     `dune runtest`
-
-
-
-
-

@@ -31,7 +31,7 @@ let step state thread =
       { state with critical2 = true }
   | _ -> failwith "Invalid thread number"
 
-(* Funktsioon lõime lahkumise simuleerimiseks kriitilisest sektsioonist *)
+(* Funktsioon lõime lahkumise/väljumise simuleerimiseks kriitilisest sektsioonist *)
 let leave_critical state thread =
   match thread with
   | 1 -> { state with critical1 = false; flag1 = false }
